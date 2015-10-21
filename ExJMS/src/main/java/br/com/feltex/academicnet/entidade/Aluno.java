@@ -1,6 +1,8 @@
 package br.com.feltex.academicnet.entidade;
 
-public class Aluno {
+import java.io.Serializable;
+
+public class Aluno implements Serializable{
 
 	private long matricula;
 	private String nome;
