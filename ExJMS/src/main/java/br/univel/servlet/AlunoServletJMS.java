@@ -1,8 +1,9 @@
-package br.com.feltex.academicnet.servlet;
+package br.univel.servlet;
  
 import java.io.IOException;
 import java.io.PrintWriter;
  
+
 import javax.annotation.Resource;
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
@@ -17,7 +18,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
  
-import br.com.feltex.academicnet.entidade.Aluno;
+
+import br.univel.entity.Aluno;
  
 @WebServlet("/AlunoServletJMS")
 public class AlunoServletJMS extends HttpServlet {

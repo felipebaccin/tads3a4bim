@@ -1,26 +1,23 @@
-package br.com.feltex.acabemicnet.mdb;
- 
+package br.univel.mdb;
+
 import javax.ejb.ActivationConfigProperty;
 import javax.ejb.MessageDriven;
 import javax.jms.Message;
 import javax.jms.MessageListener;
 import javax.jms.ObjectMessage;
 import javax.jms.TextMessage;
- 
-import br.com.feltex.academicnet.entidade.Professor;
- 
-/**
- * Message-Driven Bean implementation class for: ProfessorMDB
- */
+
+import br.univel.entity.Aluno;
+
 @MessageDriven(activationConfig = {
-		@ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Topic"),
-		@ActivationConfigProperty(propertyName = "destination", propertyValue = "java:/topic/professorTopic") }, mappedName = "java:/topic/professorTopic")
-public class ProfessorTopicMDB1 implements MessageListener {
+		@ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue"),
+		@ActivationConfigProperty(propertyName = "destination", propertyValue = "java:/queue/alunoQueue") }, mappedName = "java:/queue/alunoQueue")
+public class AlunoQueueMDB implements MessageListener {
  
-	public ProfessorTopicMDB1() {
+	public AlunoQueueMDB() {
  
 	}
-	
+ 
 	public void onMessage(Message message) {
 		System.out.println(getClass() + " Inicio");
 		try {
@@ -31,8 +28,8 @@ public class ProfessorTopicMDB1 implements MessageListener {
 			} else if (message instanceof ObjectMessage) {
 				try {
 					ObjectMessage obj = (ObjectMessage) message;
-					Professor professor = (Professor) obj.getObject();
-					System.out.println("Objeto Recebido: " + professor);
+					Aluno aluno = (Aluno) obj.getObject();
+					System.out.println("Objeto Recebido: " + aluno);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

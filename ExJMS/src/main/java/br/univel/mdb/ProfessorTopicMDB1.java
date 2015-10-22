@@ -1,4 +1,4 @@
-package br.com.feltex.acabemicnet.mdb;
+package br.univel.mdb;
  
 import javax.ejb.ActivationConfigProperty;
 import javax.ejb.MessageDriven;
@@ -7,7 +7,8 @@ import javax.jms.MessageListener;
 import javax.jms.ObjectMessage;
 import javax.jms.TextMessage;
  
-import br.com.feltex.academicnet.entidade.Professor;
+
+import br.univel.entity.Professor;
  
 /**
  * Message-Driven Bean implementation class for: ProfessorMDB
@@ -15,9 +16,9 @@ import br.com.feltex.academicnet.entidade.Professor;
 @MessageDriven(activationConfig = {
 		@ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Topic"),
 		@ActivationConfigProperty(propertyName = "destination", propertyValue = "java:/topic/professorTopic") }, mappedName = "java:/topic/professorTopic")
-public class ProfessorTopicMDB2 implements MessageListener {
+public class ProfessorTopicMDB1 implements MessageListener {
  
-	public ProfessorTopicMDB2() {
+	public ProfessorTopicMDB1() {
  
 	}
 	
