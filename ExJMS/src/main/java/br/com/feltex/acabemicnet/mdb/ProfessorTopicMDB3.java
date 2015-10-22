@@ -1,4 +1,4 @@
-package br.com.feltex.academicnet.servlet;
+package br.com.feltex.acabemicnet.mdb;
  
 import javax.ejb.ActivationConfigProperty;
 import javax.ejb.MessageDriven;

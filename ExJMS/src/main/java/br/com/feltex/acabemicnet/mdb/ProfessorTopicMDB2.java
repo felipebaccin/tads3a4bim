@@ -1,4 +1,4 @@
-package br.com.feltex.academicnet.servlet;
+package br.com.feltex.acabemicnet.mdb;
  
 import javax.ejb.ActivationConfigProperty;
 import javax.ejb.MessageDriven;
@@ -15,9 +15,9 @@ import br.com.feltex.academicnet.entidade.Professor;
 @MessageDriven(activationConfig = {
 		@ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Topic"),
 		@ActivationConfigProperty(propertyName = "destination", propertyValue = "java:/topic/professorTopic") }, mappedName = "java:/topic/professorTopic")
-public class ProfessorTopicMDB1 implements MessageListener {
+public class ProfessorTopicMDB2 implements MessageListener {
  
-	public ProfessorTopicMDB1() {
+	public ProfessorTopicMDB2() {
  
 	}
 	
