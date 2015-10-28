@@ -14,4 +14,4 @@ ele cria assim o arquivo persiste.xms dentro da parta metainf
 com o forge voce cria toda a entidade altomaticamente depois disso cria os fields tambem como o forge 
 
 #5.0 scaffoud
-index.xhtm é o jsf 
+e por final se da o scaffoud para poder criar as interfaces com a entidade 
