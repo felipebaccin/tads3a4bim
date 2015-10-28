@@ -8,3 +8,10 @@ e tambem o cdi setup cria o beans.xml  para fazer a injeção de dependencia no 
  
 #3.0 criação do jpa 
 com o forge cria o jpa com o wildfly colocando o nome da persistencia o banco que utiliza e o datasouce no jboss 
+ele cria assim o arquivo persiste.xms dentro da parta metainf  
+
+#4.0 criando a entity 
+
+
+#5.0 scaffoud
+index.xhtm é o jsf 
