@@ -1,8 +1,11 @@
 # 1.0 criação do projeto 
  o projeto foi criado com o jboss forge 
  
-# 2.0 Implementação de dependencias no POM.XML
-depois de criado o projeto voce deve abrir e colocar as dependencias do war no pom.xml para que o mesmo possa baixar as dependencias do sistema 
+# 2.0 Implementação de dependencias no POM.XML com o cdi setup 
+depois de criado o projeto voce deve se abrir o forge mais uma vez e colocar as dependencias com o cdi setup baixando as dependencias automaticamente  
 
-#3.0
+e tambem o cdi setup cria o beans.xml  para fazer a injeção de dependencia no codigo
  
+
+#3.0  
+coloca as dependencias 
